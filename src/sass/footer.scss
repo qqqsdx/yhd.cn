@@ -1,0 +1,138 @@
+@import "common";
+footer{
+    background:#fff;
+    .wrap{
+        .footer_server{
+            padding: 30px 0;
+            border-bottom: 1px solid #ebebeb;
+        }
+    }
+}
+footer .serverbox{
+        float:left;
+        width:205px;
+        margin-right:81px;
+        overflow: hidden;
+        display: block;
+        text-decoration: none;
+        img{
+            width:66px;
+            height:66px;
+            display: block;
+            float: left;
+            margin-right: 15px;
+        }
+        p{
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        span{
+            font-size: 14px;
+            color: #999;
+            line-height: 26px;
+        }
+}
+footer .serverbox:last-child{
+    margin-right:0;
+}
+.footer_role{
+    padding: 20px 0 20px;
+    overflow: hidden;
+    .footer_r_left{
+        float: left;
+        padding-left: 15px;
+    }
+    .footer_r_right{
+        width: 280px;
+        overflow: hidden;
+        float: left;
+        margin-right: -50px;
+    }
+}
+.footer_r_left{
+    dl{
+        float: left;
+        width:195px;
+        display: block;
+    }
+    dt{
+        height: 32px;
+        padding: 0 8px;
+        font-size: 14px;
+        line-height: 32px;
+        overflow: hidden;
+        font-family: "Microsoft YaHei";
+        color: #666;
+        font-weight: bold;
+    }
+    dd{
+        height: 24px;
+        padding: 0 8px;
+        line-height: 24px;
+        overflow: hidden;
+        white-space: normal;
+        font-size: 12px;
+        a{
+            color: #666;
+            font-size: 12px;
+            text-decoration: none;
+            &:hover{color: #e60012}
+        }
+    }
+}
+.footer_r_right{
+    .footer_code{
+        width:90px;
+        float: left;
+        margin-right: 50px;
+        line-height: 32px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+        p{
+            font-size: 14px;
+        }
+        a{
+            width:100%;
+            img{
+                width:90px;
+                height:90px;
+            }
+        }
+    }
+}
+.footer_link{
+    p{
+        color: #666;
+        text-align: center;
+        text-indent: 0;
+        line-height: 100%;
+        margin: 15px 0;
+        padding: 0;
+        a{
+            // display: block;
+            margin:0 3px;
+            color:#333;
+            text-decoration: none;
+            &:hover{
+                color:#c00;
+            }
+        }
+    }
+}
+.link{
+    display: block;
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 0;
+    a{
+        display: inline-block;
+        margin: 0 4px;
+        text-decoration: none;
+        img{
+            vertical-align: top;
+        }
+    }
+}

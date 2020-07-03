@@ -1,0 +1,89 @@
+@import "common";//引入公共的scss文件
+#banner{
+    width:$size100;
+    .ban-wrap{
+        width:$size100;
+        height: 400px;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+.ban-list{
+    // background-color: rgb(204, 102, 102);
+    @extend %wrap100;
+    .wrap100{
+        @extend %wrap100;
+        ul{
+            @extend %wrap100;
+            li{
+                @extend %wrap100;
+                position: absolute;
+                z-index: 0;
+                // display: none;
+            }
+        }
+    }
+}
+.ban-list {
+    li:nth-child(1)  .img{
+        background-image: url(//img14.360buyimg.com/img/jfs/t1/123964/15/142/94858/5eb3a84bE348b9f27/7cfd72e005e777a0.jpg);
+    }
+    
+    li:nth-child(2) .img{
+        background-image: url(//img20.360buyimg.com/img/jfs/t1/118312/1/5372/77414/5eb3a97aE439587dc/573739f5ef98a063.jpg);
+    }
+    // li:nth-child(3) .img{
+    //     background-image: url(http://img11.360buyimg.com/img/jfs/t1/110429/23/3574/84908/5e12a69eE0c4eaa5d/9939f832724162fd.jpg);
+    // }
+    a{
+        width: $size100;
+        height:$size100;
+        display: block;
+        max-width: 1920px;
+    }
+    .img{
+        // display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        width:$size100;
+        height:$size100;
+        min-width: 1070px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.ban-tab{
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    width: $wrap_width;
+    top: -30px;
+    z-index: 100;
+    cursor: pointer;
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin-right: 10px;
+        display: inline-block;
+        width: 110px;
+        overflow: hidden;
+        height: 40px;
+        background: #fff;
+        text-align: center;
+        color: #333;
+        font-size: 14px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    ul:nth-child(3){
+        margin-right: 0;
+    }
+    .active{
+        color:#fff;
+        background-color: #333;
+    }
+}

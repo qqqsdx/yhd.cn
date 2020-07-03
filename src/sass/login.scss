@@ -1,0 +1,212 @@
+@import "common";
+#hlogin{
+    padding: 16px;
+    font-size: 12px;
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+    .header_right{
+        float: right;
+        line-height: 18px;
+        font-family: "SimSun";
+        color: #999;
+        a{
+            color: #06c;
+        }
+    }
+}
+
+.login_wrap{
+    padding: 26px 0 0;
+    background: url(../images/login_topshadow.png) repeat-x;
+        .wrap{
+        width: 980px;
+        margin: 0 auto;
+        .login_banner{
+            margin-top: 45px;
+            width: 510px;
+            height: 315px;
+            float: left;
+            .login_banner img{
+                width: 510px;
+                height: 315px;
+            }
+        }
+        .login_box{
+            position: relative;
+            float: right;
+            width: 330px;
+            padding: 45px 35px 15px 35px;
+            background-color: #fff;
+        }
+    }
+}
+.login_wrap .login_box .login{
+    .error_tip{
+        position: absolute;
+        top: 9px;
+        left: 35px;
+        width: 282px;
+        height: 30px;
+        overflow: hidden;
+        padding: 0 10px 0 36px;
+        border: 1px solid #e5debc;
+        border-radius: 2px;
+        background: #fff7d1 url(../images/login_new.png) no-repeat -324px -150px;
+        line-height: 30px;
+        color: #999;
+        display: none;
+    }
+    h3{
+        float: left;
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    a{
+        float: right;
+        line-height: 30px;
+        color: #06c;
+    }
+    .login_form{
+        // position: relative;
+        .form_item{
+            position: relative;
+            z-index: 100;
+            height: 24px;
+            margin-bottom: 10px;
+            padding: 14px 18px;
+            border: 1px solid #dedede;
+            background: #FFF;
+            line-height: 24px;
+            label{
+                display: inline-block;
+                width: 42px;
+                vertical-align: middle;
+                color: #666;
+            }
+            input{
+                width: 230px;
+                height: 24px;
+                padding-left: 3px;
+                border: 0 none;
+                line-height: 24px;
+                vertical-align: middle;
+                font-family: "Microsoft YaHei";
+                font-size: 14px;
+                outline: none;
+            }
+            .user_img{
+                background: url(../images/login_new.png) no-repeat -50px 4px;
+            }
+            .pass_img{
+                background: url(../images/login_new.png) no-repeat -150px 4px;
+            }
+        }
+    }
+    .auto_login{
+        position: relative;
+        margin: 10px 0;
+        line-height: 24px;
+        min-height: 24px;
+        color: #999;
+        .check{
+            float: left;
+            padding-left: 18px;
+            background: url(../images/login_new.png) no-repeat -347px -325px;
+            color: #999;
+            line-height: 24px;
+        }
+        .uncheck{
+            float: left;
+            padding-left:18px;
+            background: url(../images/login_new.png) no-repeat -347px -265px;
+            color:#999;
+            line-height: 24px;
+            &:hover{
+                background-position: -347px -295px;
+                line-height: 24px;
+            }
+        }
+        span{
+            color:red;
+            line-height: 24px;
+            margin-left: 7px;
+            display: none;
+        }
+        #forget{
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #999;
+            line-height: 24px;
+        }
+    }
+    #login_button{
+        width: 330px;
+        height: 52px;
+        border: 0 none;
+        border-radius: 3px;
+        background: #ff3c3c;
+        font-size: 16px;
+        color: #FFF;
+        cursor: pointer;
+        text-shadow: 1px 1px 1px #ff7373;
+        font-family: "Microsoft YaHei";
+        line-height: 52px;
+    }
+}
+.login_wrap .more_land{
+    p{
+        padding: 15px 0;
+        color: #666;
+    }
+    ul li{
+        float: left;
+        margin: 0 20px 0 0;
+    }
+    .iconlogin{
+        display: inline-block;
+        width: 32px;
+        height: 35px;
+        font-size: 32px;
+        line-height: 35px;
+        font-family: "iconlogin";
+    }
+    .qq{
+        color: #10a8ff;
+    }
+    .jongdong{
+        color: #c81825;
+    }
+    .weixin{
+        color:#0c0;
+    }
+    .sina{
+        color:#dd2e37;
+    }
+    .clearfix .unfold{
+        float: right;
+        display: block;
+        line-height: 34px;
+        color: #999;
+        i{
+            display: inline-block;
+            width: 20px;
+            height: 26px;
+            margin-top: 4px;
+            margin-left: 5px;
+            background: url(https://passport.yhd.com/front-passport/passport/images/login.png?e829f75) no-repeat -200px 3px;
+            vertical-align: middle;
+        }
+    }
+}
+#flogin{
+    width: 980px;
+    margin: 20px auto 0;
+    text-align: center;
+    a{
+        margin: 0 8px;
+        color: #333;
+    }
+}

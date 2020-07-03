@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: iconfont;
+  src: url(../fonts/iconfont.woff) format("woff");
+}
+@font-face {
+  font-family: iconlogin;
+  src: url(../fonts/iconlogin.woff) format("woff");
+}
+/* line 22, ../sass/_common.scss */
+.iconfont {
+  font-family: "iconfont";
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 28, ../sass/_common.scss */
+.iconlogin {
+  font-family: "iconlogin";
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 34, ../sass/_common.scss */
+.clearfix::after {
+  content: "";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 43, ../sass/_common.scss */
+.wrap {
+  width: 1070px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 48, ../sass/_common.scss */
+body {
+  color: #333;
+  background-color: #f5f5f5;
+  font: 12px "Microsoft YaHei", Helvetica Neue, tahoma, Arial, Verdana, "Hiragino Sans GB", "宋体";
+}
+
+/* line 53, ../sass/_common.scss */
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* line 2, ../sass/registry.scss */
+#registry {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #f4f4f4;
+  background: #fcfcfc;
+  padding: 30px 0 40px;
+}
+/* line 8, ../sass/registry.scss */
+#registry .bg {
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  z-index: 120;
+  width: 1200px;
+  height: 500px;
+  margin-left: -600px;
+  opacity: .05;
+}
+/* line 18, ../sass/registry.scss */
+#registry .bg1 {
+  background: url(../images/r_icon1.png) no-repeat;
+}
+/* line 21, ../sass/registry.scss */
+#registry .bg2 {
+  background: url(../images/r_icon2.png) no-repeat;
+}
+/* line 24, ../sass/registry.scss */
+#registry .bg3 {
+  background: url(../images/r_icon3.png) no-repeat;
+}
+/* line 27, ../sass/registry.scss */
+#registry .bg4 {
+  background: url(../images/r_icon4.png) no-repeat;
+}
+/* line 30, ../sass/registry.scss */
+#registry .bg5 {
+  background: url(../images/r_icon5.png) no-repeat;
+}
+/* line 33, ../sass/registry.scss */
+#registry .registry {
+  position: relative;
+  z-index: 150;
+  width: 330px;
+  margin: 0 auto;
+}
+/* line 38, ../sass/registry.scss */
+#registry .registry .re_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+  color: #333;
+}
+
+/* line 47, ../sass/registry.scss */
+#registry .re_form ul li {
+  position: relative;
+  min-height: 52px;
+  margin-top: 10px;
+  margin-right: -200px;
+}
+/* line 52, ../sass/registry.scss */
+#registry .re_form ul li .same_item {
+  position: relative;
+  z-index: 2;
+  width: 328px;
+  height: 50px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+}
+/* line 59, ../sass/registry.scss */
+#registry .re_form ul li .same_item .same_input {
+  position: relative;
+  z-index: 2;
+  width: 288px;
+  height: 20px;
+  margin-top: 15px;
+  padding: 0px 20px;
+  background: 0;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+/* line 73, ../sass/registry.scss */
+#registry .re_form ul li .same_item .same_label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  color: #666;
+  text-align: right;
+}
+#registry .re_form ul li .same_item .same_label1{
+  left: 10px;
+}
+/* line 84, ../sass/registry.scss */
+#registry .re_form ul li .short {
+  width: 192px;
+  float: left;
+}
+/* line 87, ../sass/registry.scss */
+#registry .re_form ul li .short .short_input {
+  width: 152px;
+  float: left;
+}
+/* line 92, ../sass/registry.scss */
+#registry .re_form ul li .same_tips {
+  display: none;
+  position: absolute;
+  left: 348px;
+  top: 0;
+  font-size: 12px;
+  color: #fff;
+}
+/* line 99, ../sass/registry.scss */
+#registry .re_form ul li .same_tips .tips_in {
+  padding: 10px;
+  background: #e4e4e4;
+}
+/* line 102, ../sass/registry.scss */
+#registry .re_form ul li .same_tips .tips_in i {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -5px;
+  border-color: transparent #e4e4e4 transparent transparent;
+  border-style: dashed solid dashed dashed;
+  border-width: 5px;
+  font-size: 0;
+}
+/* line 117, ../sass/registry.scss */
+#registry .re_form ul li .same_tips .tips_in .tips_word {
+  max-width: 160px;
+  line-height: 20px;
+  color: #666;
+}
+/* line 124, ../sass/registry.scss */
+#registry .re_form ul li .tips_user {
+  top: -4px;
+}
+/* line 127, ../sass/registry.scss */
+#registry .re_form ul li .re_sub {
+  height: 35px;
+  font-size: 12px;
+  line-height: 35px;
+  color: #666;
+  text-indent: 1em;
+}
+/* line 133, ../sass/registry.scss */
+#registry .re_form ul li .re_sub a {
+  color: #06c;
+  text-decoration: none;
+  font-size: 12px;
+}
+/* line 139, ../sass/registry.scss */
+#registry .re_form ul li .re_button {
+  display: block;
+  width: 330px;
+  height: 52px;
+  margin-top: 6px;
+  background-color: #ff3c3c;
+  font-size: 16px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+}
+
+/* line 154, ../sass/registry.scss */
+#registry .re_form ul .short_item a {
+  position: relative;
+  z-index: 2;
+  width: 126px;
+  height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #57565f;
+  line-height: 52px;
+  color: #fff;
+  cursor: default;
+  border-radius: 2px;
+  font-size: 14px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 172, ../sass/registry.scss */
+.success {
+  display: none;
+  position: absolute;
+  left: 348px;
+  top: 14px;
+  width: 23px;
+  height: 23px;
+  background: url(../images/regist_new.png) no-repeat -50px 0;
+}
+

@@ -1,0 +1,258 @@
+@import "common";
+#super{
+    margin-top: 20px;
+    position: relative;
+    height:444px;
+    .wrap{
+        height:370px;
+        background-image: url(https://img.yihaodianimg.com/front-homepage/index/images/super_single_bg.png);
+        ul{
+            width: 1050px;
+            height: 432px;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            li{
+                width: 210px;
+                height: 216px;
+                float: left;
+                font-size: 14px;
+            }
+            .content{
+                background-color: #fff;
+                &:hover{
+                    box-shadow: 0 5px 31px 0 rgba(0,0,0,0.09);
+                    transform: scale(1.06);
+                }
+            }
+        }
+    }
+    
+}
+#super .wrap ul .super_single{
+    background: 0;
+    img{
+        width: 129px;
+        height: 36px;
+        margin-left: 20px;
+        margin-top: 22px;
+        cursor: pointer;
+    }
+    .line{
+        width: 180px;
+        height: 40px;
+        margin-left: 24px;
+        position: relative;
+        overflow: hidden;
+        span:nth-child(1){
+            font-size: 14px;
+            color: rgba($color: #fff, $alpha: 0.8);
+            margin-right: 8px;
+            height:22px;
+            float: left;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        span:nth-child(2){
+            border-bottom: 3px solid #fff;
+            position: absolute;
+            height: 1px;
+            width: 28px;
+            left: 0px;
+            top: 27px
+        }
+    }
+    .date{
+        width: 137px;
+        height: 66px;
+        margin-left: 24px;
+        margin-top: 10px;
+        .date_title{
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            .icon{
+                font-family: "iconfont";
+                font-size: 20px;
+                position: relative;
+                top: 2px;
+            }
+        }
+        .date_time{
+            font-size: 0;
+            text-align: center;
+            margin-top: 9px;
+            i{
+                display: inline-block;
+                width: 16px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                position: relative;
+                top: -3px;
+                font-style: normal;
+            }
+            .time_inner{
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background-color: #161616;
+                color: #fff;
+                font-size: 20px;
+                font-family: Tahoma;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+#super .wrap ul .content{
+    a{
+        .content_top{
+            width: 210px;
+            height: 135px;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            position: relative;
+        img{
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            margin-left: -55px; 
+            }
+        }
+        .content_bottom{
+            height: 81px;
+            width: 150px;
+            margin: 0 auto;
+            position: relative;
+            .c_title{
+                font-size: 14px;
+                width: 153px;
+                height: 20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;  
+            }
+            .c_bar{
+                width: 150px;
+                height: 6px;
+                margin-top: 10px;
+                background-color: #e2e2e2;
+                border-radius: 100px;
+            }
+            
+        }
+    }
+}
+.content_bottom .c_bar div{
+    width:53%;
+    height:$size100;
+    background-color: #d9161d;
+    border-radius: 100px;
+}
+.content_bottom .c_num{
+    height: 33px;
+    padding-top: 12px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .c_inner{
+        display: inline-block;
+        font-family: Tahoma,"Microsoft YaHei";
+        color: #e50113;
+        font-weight: bold;
+        font-size: 14px;
+        .c_left{
+            margin-left: -3px;
+        }
+        .c_before{
+            text-decoration: line-through;
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+            margin-left: 4px;
+        }
+    }
+}
+aside{
+    width:100px;
+    height:210px;
+    // background-color: silver;
+    position: absolute;
+    // position: fixed;
+    // top:50%;
+    top:0;
+    left:50%;
+    margin-left: 540px;
+    // margin-top:-87px;
+    .a_top{
+        background-color: #fff;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        line-height: 14px;
+        p{
+            height: 30px;
+            line-height: 34px;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        img:nth-child(2){
+            width: 76px;
+            cursor: pointer;
+        }
+        img:nth-child(3){
+            width: 100px
+        }
+    }
+    .a_middle{
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        i{
+            color: #272636;
+            font-family: "iconfont";
+            font-size: 20px;
+            position: relative;
+            top: 1px;
+        }
+    }
+    .a_bottom{
+        font-size: 14px;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 29px;
+        background-color: #444;
+        color: #fff;
+        font-family: Tahoma;
+        cursor: pointer;
+        display: block;
+        i{
+            color: #fff;
+            position: relative;
+            top: 2px;
+            font-size: 20px;
+            font-family: "iconfont";
+        }
+    }
+}

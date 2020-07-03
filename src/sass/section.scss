@@ -1,0 +1,341 @@
+@import "common";
+#sec{
+    .wrap{
+
+        section{
+            width:$wrap_width;
+            height: 421px;
+            margin-top:20px;
+            background-color: #fff;
+        }
+    }
+}
+#sec .wrap section{
+    .sec_left{
+        width: 899px;
+        height: 421px;
+        float: left;
+        .sec_title{
+            height:67px;
+            display: block;
+            .sec_big{
+                height:35px;
+                margin-left:20px;
+                margin-top: 17px;
+                font-size: 26px;
+                color:#65c73e;
+                cursor: pointer;
+                display: inline-block;
+                max-width: 190px;
+                overflow: hidden
+            }
+            .sec_small{
+                color: rgba(101,199,62,0.70);
+                margin-left: 8px;
+                font-size: 16px;
+                margin-top: 27px;
+                height: 21px;
+                cursor: pointer;
+                display: inline-block;
+                max-width: 208px;
+                overflow: hidden;
+                position: relative;
+                top: -3px;
+            }
+        }
+        .sec_con{
+            width: 880px;
+            height: 334px;
+            position: relative;
+            padding-left: 20px;
+            img{
+                position: relative;
+                width: 189px;
+                height: 334px;
+                float: left;
+            }
+            .sec_type{
+                font-size: 14px;
+                color: #fff;
+                position: absolute;
+                width: 176px;
+                height: 90px;
+                margin-left: 14px;
+                top: 16px;
+            }
+            .sec_con_right{
+                width: 680px;
+                height: 334px;
+                float: left;
+            }
+        }
+    }
+    .sec_right{
+        width: 170px;
+        height: 421px;
+        float: left;
+        border-left: 1px solid #f6f6f6;
+        position: relative;
+        img{
+            margin-left: 81px;
+            position: absolute;
+            width: 71px;
+            background: 0;
+        }
+        p{
+            margin-left: 20.5px;
+            font-size: 14px;
+            color: #999;
+            margin-top: 7px;
+            width: 130px;
+            height: 21px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .sec_r_title{
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .sec_r_box{
+            overflow: hidden;
+            position: absolute;
+            height: 317px;
+            width: 120px;
+            left: 28px;
+            bottom: 39px;
+            .sec_r_content{
+                width: 1000px;
+                height: 100%;
+                transition: all .5s ease;
+                position: relative;
+                left: 10px;
+            }
+        }
+        span{
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            color: #fff;
+            bottom: 20px;
+            text-align: center;
+            line-height: 16px;
+            background: #d5d5d5;
+            cursor: pointer;
+            i{
+                font-size: 13px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                font-family: "iconfont";
+            }
+        }
+        .btn_left{
+            left: 60px;
+            background-color: #ebebeb;
+        }
+        .btn_right{
+            left: 94px;
+            i{
+                left: 1px;
+            }
+        }
+    }
+}
+#sec .wrap .section_2 .sec_left .sec_title{
+    .sec_big{
+        color: #E451A8;
+    }
+    .sec_small{
+        color: rgba(228,81,168,0.70);
+    }
+}
+#sec .wrap .sec_left .sec_type div{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.61);
+    width: 74px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    float: left;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    color: #fff;
+    overflow: hidden;
+}
+#sec .wrap section .sec_con_right .two{
+        width: 335px;
+        height: 167px;
+        position: relative;
+        float: left;
+        background-color: #faf7f6;
+        p{
+            width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+        p:nth-child(1){
+            margin-top: 40px;
+        }
+        p:nth-child(2){
+            margin-top: 5px;
+        }
+        div{
+            width: 78px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            margin-top: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+        img{
+            width:110px;
+            height:110px;
+            cursor: pointer;
+            position: absolute;
+            right: 30px;
+            bottom: 27px;
+            transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+            &:hover{
+                transform: translate3d(-5px,0,0);
+            }
+        }
+}
+#sec .wrap section .sec_con_right {
+    .one{
+    float: left;
+    position: relative;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+    p{
+        font-size: 14px;
+        color: #666;
+        overflow: hidden;
+        height: 14px;
+        width: 102px;
+        line-height: 1;
+        margin-bottom: 7px;
+    }
+    img{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        bottom: 10px;
+        right: 10px;
+        margin-top: 15px;
+        margin-left: 15px;
+        transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+        &:hover{
+            transform: translate3d(-5px,0,0);
+        }
+    }
+    p:nth-child(1){
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    p:nth-child(2){
+        font-weight: bold;
+        margin-left: 13px;
+        margin-top: -1px;
+    }
+    }
+    .one_border{
+        border-right: 1px solid #f6f6f6;
+    }
+}
+#sec .wrap .section_1 .sec_con_right .two{
+    p:nth-child(1){
+        color: #3c8020;
+    }
+    p:nth-child(2){
+        color: #69b14b;
+    }
+    div{
+        border: 1px solid rgba(114,191,37,0.50);
+        color:#72bf25;
+    }
+}
+#sec .wrap .section_2 .sec_con_right .two{
+    p:nth-child(1){
+    color: #6a1752;
+        }
+    p:nth-child(2){
+        color: #a858a0;
+        }
+    div{
+        border: 1px solid rgba(209,90,160,0.50);
+        color: #D15AA0; 
+    }
+}
+#sec .wrap .section_3 .sec_con_right .two{
+    p:nth-child(1){
+    color: #1e389a;
+        }
+    p:nth-child(2){
+        color: #1e389a;
+        }
+    div{
+        border: 1px solid rgba(100,126,220,0.50);
+        color: #647EDC; 
+    }
+}
+#sec .sec_right .sec_r_content ul {
+    position: relative;
+    height: 100%;
+    float: left;
+    left: 2px;
+    margin-right: 120px;
+    transition: left .6s ease;
+    a:nth-child(1) li{
+        margin-top: 13px;
+    }
+    li{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 2px 20px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.07);
+    margin-bottom: 11px;
+    cursor: pointer;
+        div{
+            position: absolute;
+            font-size: 12px;
+            color: #fff;
+            width: 40px;
+            height: 16px;
+            text-align: center;
+            font-family: Tahoma;
+            font-weight: bold;
+        }
+        .top1{
+            background: url(../images/top1.png);
+        }
+        .top2{
+            background: url(../images/top2.png);
+        }
+        .top3{
+            background: url(../images/top3.png);
+        }
+        img{
+            margin-top: 15px;
+            margin-left: 15px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+#sec .sec_right {
+    
+   
+}

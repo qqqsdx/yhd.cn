@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车</title>
+    <link rel="icon" href="../fonts/favicon.ico">
+    <link rel="stylesheet" href="../css/cartlist.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/require.js" data-main="../js/main.shopcar.js"></script>
+    <style>
+        li{
+            list-style: none;
+        }
+        .item {
+            border: .5px solid #cccccc;
+            overflow: hidden;
+        }
+        
+        .item>div {
+            float: left;
+            margin: 15px 10px;
+        }
+        
+        .p-pic>img {
+            width: 80px;
+        }
+        .item>.c-box{
+            margin-top: 45px;
+        }
+        .p-title {
+            width: 300px;
+            margin-right: 150px;
+            font-size: 14px;
+        }
+        .p-price{
+            display: block;
+            width: 256px;
+            text-align: center;
+            margin-left: 50px;
+        }
+        .num_act{
+            float: right;
+            padding: 3px 0;
+            width: 80px;
+            height: 18px;
+            line-height: 18px;
+            border: 1px solid #dfdfdf;
+            border-radius: 2px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .num_act a{
+            float: left;
+            width: 20px;
+            text-align: center;
+            color: #666;
+            font-family: 'Tahoma';
+            font-size: 14px;
+            overflow: hidden;
+        }
+        .input{
+            float: left;
+            width: 38px;
+            height: 18px;
+            border: none;
+            border-left: 1px solid #dfdfdf;
+            border-right: 1px solid #dfdfdf;
+            text-align: center;
+            line-height: 18px;
+            outline: none;
+        }
+        .p-price-sum{
+            width: 190px;
+            text-align: right;
+            font-size: 16px;
+        }
+
+        .p-del{
+            text-align: center;
+            width: 100px;
+        }
+        .xr{
+            background: #fff
+        }
+        .xr>li{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top_bar">
+            <div class="top_bar_main">
+                <a href="javascript:;">
+                    <i class="icon iconfont"></i>
+                    <span class="text">1号店首页</span>
+
+                </a>
+                <!-- 公告 -->
+                <div class="notice">
+                    <i class="icon iconfont"></i>
+                    <ul class="notice_slider">
+                        <li class="slider">防范金融诈骗提示</li>
+                        <li class="slider">1号店配送费调整公告</li>
+                        <li class="slider">1金融下线公告</li>
+                    </ul>
+
+                </div>
+                <!-- 登录注册入口 -->
+                <div class="login_entry">
+                    <ul>
+                        <li class="login">
+                            <div class="unlogin">
+                                <span class="hd_hi">下午好,请</span>
+                                <a href="http://localhost/project/yhd.com/login.html"
+                                    class="login_link">登录&nbsp;</a>
+                                <a href="http://localhost/project/yhd.com/registry.html"
+                                    class="regist_link">&nbsp;注册</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hd_menu">
+                                <a href="javascript:;">
+                                    <i class="icon iconfont"></i>
+                                    <span class="text">会员俱乐部</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hd_menu">
+                                <a href="//home.yhd.com/order/toOrderList.do" target="_blank" rel="nofollow">
+                                    <i class="icon iconfont"></i>
+                                    <span class="text">我的订单</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hd_menu">
+                                <a href="//home.yhd.com/order/toOrderList.do" target="_blank" rel="nofollow">
+                                    <i class="icon iconfont"></i>
+                                    <span class="text">下载APP</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="clearfix main_content">
+        <div class="cart_head clearfix wrap">
+            <div class="head_l">
+                <h1>
+                    <a href="" class="logo"></a>
+                    <a href="" class="logo_text"></a>
+                </h1>
+            </div>
+            <!-- 配送地址 -->
+            <div class="area_wrap">
+                <span class="area_txt">配送至：</span>
+                <div class="address" id="completed_address" data-tpa="CART_ADDRESS_AREA">
+                    <span class="val_text" id="detail_area_name">杭州
+                        <i>|</i>江干区
+                        <i>|</i>城区
+                    </span>
+                    <i class="btn_arrow"></i>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <div class="search">
+                <input id="keyword" type="text" placeholder="请输入关键词">
+                <a id="search" href="javascript:void(0);" class="search_btn iconfont"></a>
+               
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="cart_body">
+            <div class="wrap">
+                <ul class="clearfix wrap good_info">
+                    <li class="checkbox">
+                        <!-- <input type="checkbox">
+                        <span>全选</span> -->
+                    </li>
+                    <li class="tit">商品信息</li>
+                    <li class="price_txt">单价（元）</li>
+                    <li class="num_txt">数量</li>
+                    <li class="total">小计</li>
+                    <li class="act">操作</li>
+                </ul>
+                <!-- 商品渲染 -->
+                <div class="xr">
+                    
+                </div>
+                </div> -->
+                <!-- 商品总价 -->
+                <div class="total_price">
+                    <div class="act_l">
+                        <span class="sel_all">
+                            <input type="checkbox" class="allselector" checked>
+                            <span class="all">全选（共<em>0</em>件）</span>|
+                        </span>
+                        <span class="del_all">批量删除</span>
+
+                    </div>
+                    <div class="act_r">
+                        <a href="#" class="count_btn">去结算</a>
+                        <div class="count">
+                                合计：
+                                <span class="money">￥<b>0</b></span>    
+                        </div>
+                        <div class="num_count">
+                            <span>已选商品<b>0</b>件</span>
+                            <a href="#">预览</a>|
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer_server clearfix">
+                <a href="#" class="serverbox">
+                    <img src="../images/zp.jpg" alt="">
+                    <p>正品保障</p>
+                    <span>正品行货 放心选购</span>
+                </a>
+                <a href="#" class="serverbox">
+                    <img src="../images/by.jpg" alt="">
+                    <p>满99包邮</p>
+                    <span>满99元 免运费</span>
+                </a>
+                <a href="#" class="serverbox">
+                    <img src="../images/sh.jpg" alt="">
+                    <p>售后无忧</p>
+                    <span>7天无理由退货</span>
+                </a>
+                <a href="#" class="serverbox">
+                    <img src="../images/zs.jpg" alt="">
+                    <p>准时送达</p>
+                    <span>收货时间由你做主</span>
+                </a>
+            </div>
+            <div class="footer_role clearfix">
+                <div class="footer_r_left">
+                    <dl>
+                        <dt>新手入门</dt>
+                        <dd>
+                            <a href="#">购物流程</a>
+                        </dd>
+                        <dd>
+                            <a href="#">会员制度</a>
+                        </dd>
+                        <dd>
+                            <a href="#">订单查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">服务协议及隐私说明</a>
+                        </dd>
+
+                        <dd>
+                            <a href="#">网站地图</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd>
+                            <a href="#">货到付款</a>
+                        </dd>
+                        <dd>
+                            <a href="#">网上支付</a>
+                        </dd>
+                        <dd>
+                            <a href="#">礼品卡支付</a>
+                        </dd>
+                        <dd>
+                            <a href="#">其它支付</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd>
+                            <a href="#">配送进度查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">商品验货与签收</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>相关规则</dt>
+                        <dd>
+                            <a href="#">平台规则</a>
+                        </dd>
+                        <dd>
+                            <a href="#">退换货政策</a>
+                        </dd>
+                        <dd>
+                            <a href="#">发票制度</a>
+                        </dd>
+                        <dd>
+                            <a href="#">帮助中心</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="footer_r_right">
+                    <div class="footer_code clearfix">
+                        <p>APP更优惠</p>
+                        <a href="#">
+                            <img src="../images/code1.png" alt="APP更优惠二维码">
+                        </a>
+                    </div>
+                    <div class="footer_code clearfix">
+                        <p>加微信查订单</p>
+                        <a href="#">
+                            <img src="../images/code2.jpg" alt="加微信查订单二维码">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_link">
+            <p>
+                <a>沪ICP备16050468号</a>
+                |
+                <a href="#">经营证照</a>
+                |
+                <a href="#">互联网药品信息服务资格证(沪)-经营性-2017-0006</a>
+                |
+                <a>违法和不良信息举报电话：0527-88100253</a>
+                |
+                <a href="#">沪B2-20170039</a>
+                |
+                <a href="#">沪公网安备 31010502002939号</a>
+                |
+                <a href="#">友情链接</a>
+                |
+                <a href="#">出版物经营许可证</a>
+                |
+                <a href="#">增值电信业务经营许可证</a>
+            </p>
+            <p>Copyright© 1号店网上超市 2007-2019，All Rights Reserved</p>
+            <div class="link">
+                <a href="#">
+                    <img src="http://d9.yihaodianimg.com/N01/M0A/95/FD/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../images/dajiaping.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="http://d6.yihaodianimg.com/N10/M09/0E/1F/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="http://d9.yihaodianimg.com/N08/M01/C7/7E/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../images/kexinwangzhan.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../images/jinghui.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="http://img30.360buyimg.com/img/jfs/t1/61675/5/2178/16486/5d0882e1E611dd02d/7b46518a9d74a1d6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
