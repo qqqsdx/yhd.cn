@@ -4,7 +4,7 @@
     $sql = "select * from product";
 
     $res = $mysqli->query($sql);
-
+    
     $arr = array();
 
     while($row = $res->fetch_assoc()){
@@ -14,6 +14,6 @@
     $json = json_encode($arr);
 
     echo $json;
-
+    
     $mysqli->close();
 ?>

@@ -529,7 +529,7 @@ a {
 }
 /* line 416, ../sass/cartlist.scss */
 .main_content .total_price {
-  margin-left: 400px;
+ margin:0 auto;
   position: relative;
   z-index: 333;
   height: 60px;
@@ -758,6 +758,5 @@ a {
 .xr{
   margin: 0 auto;
   width: 1200px;
-  height: 500px;
-  background: red;
+  min-height: 500px;
 }
